@@ -6,7 +6,7 @@ import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 
 const Index = () => (
-  <main className="pt-20 md:pt-24">
+  <main className="pt-20 md:pt-24 pb-20 md:pb-0">
     <HeroSection />
     <ServicosSection />
     <BeneficiosSection />

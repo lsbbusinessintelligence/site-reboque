@@ -10,7 +10,7 @@ const HeroSection = () => (
       <div className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-white/10 blur-3xl animate-pulse" style={{ animationDuration: "5s" }} />
     </div>
 
-    <div className="container relative z-10 py-20 md:py-32">
+    <div className="container relative z-10 py-16 md:py-32">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -34,9 +34,10 @@ const HeroSection = () => (
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground mb-6">
             LSB Reboques | Guincho e Socorro Rodoviario 24 Horas
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 max-w-2xl">
+          <p className="text-lg md:text-xl text-primary-foreground/70 mb-4 max-w-2xl">
             Carro parado ou acidente? A LSB Reboques chega ate si em minutos. Atendimento rapido, seguro e com o melhor preco da regiao.
           </p>
+          <p className="mb-6 text-sm font-semibold text-accent">Ligacao prioritaria para emergencias na estrada.</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
               href={PHONE_URL}
@@ -97,6 +98,8 @@ const HeroSection = () => (
               <img
                 src="/images/reboque/avatar.png"
                 alt="Operador de guincho com caminhao na rodovia"
+                loading="eager"
+                fetchPriority="high"
                 className="w-full h-auto"
               />
             </div>
