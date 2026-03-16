@@ -14,7 +14,7 @@ const FloatingWhatsApp = () => {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="h-12 sm:h-14 min-w-[116px] sm:min-w-[126px] rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 px-4 animate-pulse"
+        className="h-12 sm:h-14 min-w-[116px] sm:min-w-[126px] rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 px-4"
         title="Falar no WhatsApp"
         onClick={() => {
           if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -31,8 +31,8 @@ const FloatingWhatsApp = () => {
 
       <a
         href={PHONE_URL}
-        className="h-12 sm:h-14 min-w-[116px] sm:min-w-[126px] rounded-full bg-accent hover:brightness-110 text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 px-4"
-        title="Ligar agora"
+        className="h-12 sm:h-14 min-w-[116px] sm:min-w-[126px] rounded-full bg-accent hover:brightness-110 text-accent-foreground shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 px-4 animate-pulse"
+        title="Chamar Guincho"
         onClick={() => {
           if (typeof window !== 'undefined' && (window as any).gtag) {
             (window as any).gtag('event', 'click_call', {
@@ -43,7 +43,7 @@ const FloatingWhatsApp = () => {
         }}
       >
         <Phone className="w-5 h-5" />
-        <span className="font-semibold text-sm">Ligar</span>
+        <span className="font-semibold text-sm">Chamar Guincho</span>
       </a>
     </motion.div>
   );

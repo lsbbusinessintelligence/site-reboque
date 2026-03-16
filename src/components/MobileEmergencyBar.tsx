@@ -17,7 +17,7 @@ const MobileEmergencyBar = () => (
         }}
       >
         <Phone className="w-4 h-4" />
-        LIGAR AGORA
+        CHAMAR GUINCHO
       </a>
       <a
         href={WHATSAPP_URL}
