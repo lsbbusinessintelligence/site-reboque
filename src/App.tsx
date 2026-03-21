@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import TopSectionsNav from "./components/TopSectionsNav";
 import MobileEmergencyBar from "./components/MobileEmergencyBar";
+import HomeButton from "./components/HomeButton";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       </BrowserRouter>
       <FloatingWhatsApp />
       <MobileEmergencyBar />
+      <HomeButton />
     </TooltipProvider>
   </QueryClientProvider>
 );
