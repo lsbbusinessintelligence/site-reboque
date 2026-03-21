@@ -4,7 +4,7 @@ const HomeButton = () => {
   return (
     <a
       href="https://www.lsbintelligence.com.br"
-      className="fixed top-4 left-4 z-50 flex items-center justify-center w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-200 group border border-gray-200"
+      className="fixed top-4 left-4 z-[60] flex items-center justify-center w-12 h-12 bg-white/95 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-200 group border border-gray-200"
       title="Voltar para LSB Intelligence"
       onClick={() => {
         if (typeof window !== 'undefined' && (window as any).gtag) {
